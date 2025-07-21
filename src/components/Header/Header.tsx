@@ -6,14 +6,14 @@ import Search from './Search';
 const Header = () => {
 	return (
 		<>
-			<div className="mb-4 flex gap-[48px]">
+			<div className="mb-4 flex gap-[3rem]">
 				<div>
 					<img alt="Sale Icon" src="/logo_sunfil1.png" />
 				</div>
 				<Search />
 				<HeaderTools />
 			</div>
-			<div className="mb-4 flex gap-[48px] items-center">
+			<div className="mb-4 flex gap-[1.5rem] items-center">
 				<CategoryGroup />
 				<CompanyInfoList />
 			</div>

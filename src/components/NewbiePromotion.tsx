@@ -9,24 +9,26 @@ const NewbiePromotion = () => {
 	return (
 		<div className="bg-gradient-to-r from-promotion-blue-start via-promotion-cyan-mid to-promotion-blue-end text-white font-[400]">
 			<div className="lg:w-[75vw] m-auto">
-				<div className="flex justify-between p-1">
+				<div className="flex justify-between items-center p-1">
 					<div className="flex gap-2 items-center">
 						<img src="/icons/Sale.svg" alt="Sale Icon" className="w-4 h-4" />
-						<Trans i18nKey="header.promoBanner" values={{ code }}>
-							Nhập mã <span className="text-yellow-300 font-bold">{code}</span> giảm ngay 10% cho lần đầu
-							mua hàng.
-						</Trans>
+						<div className="h-4 text-ssm">
+							<Trans i18nKey="header.promoBanner" values={{ code }}>
+								Nhập mã <span className="text-yellow-300 font-bold">{code}</span> giảm ngay 10% cho lần
+								đầu mua hàng.
+							</Trans>
+						</div>
 					</div>
 					<div className="flex gap-6">
 						<div className="flex items-center gap-2">
 							<img src="/icons/Smartphone.svg" alt="Sale Icon" className="w-4 h-4" />
-							<div>Hotline: {phone}</div>
+							<div className="h-4 text-ssm">Hotline: {phone}</div>
 						</div>
 
-						<div className="flex gap-2 items-center">
+						<a className="inline-flex gap-2 items-center">
 							<img src="/icons/Phone Rounded.svg" alt="Sale Icon" className="w-4 h-4" />
-							<p className="align-middle">{t('header.downloadApp')}</p>
-						</div>
+							<div className="h-4 text-ssm">{t('header.downloadApp')}</div>
+						</a>
 					</div>
 				</div>
 			</div>

@@ -12,7 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
 		<div className="min-h-screen flex flex-col">
 			<NewbiePromotion />
-			<div className="w-full lg:w-[75vw] m-auto flex-1 flex flex-col">
+			<div className="m-auto xl:w-[75%] flex-1 flex flex-col text-ssm">
 				<Header />
 				<main className="flex-1 bg-red-300">{children}</main>
 				<Footer />

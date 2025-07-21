@@ -4,17 +4,17 @@ import HeaderToolItem from './HeaderToolItem';
 const HeaderTools = () => {
 	const { t } = useTranslation();
 	return (
-		<div className="tools flex gap-[48px] items-center">
+		<div className="tools flex gap-[2rem] items-center">
 			<HeaderToolItem
-				imgSrc={<img alt="Vietnamese" src="/icons/ico-country-c-vietnam.svg" className="w-[36px] h-[36px]" />}
+				imgSrc={<img alt="Vietnamese" src="/icons/ico-country-c-vietnam.svg" className="w-9 h-9" />}
 				text={t('header.language')}
 			/>
 
 			<HeaderToolItem
 				imgSrc={
 					<div className="relative">
-						<img alt="Cart" src="/icons/Cart.svg" className="w-[36px] h-[36px]" />
-						<div className="left-[20px] top-[-12px] w-[24px] h-[24px] absolute p-2 rounded-full bg-badge-orange text-[12px] flex items-center justify-center">
+						<img alt="Cart" src="/icons/Cart.svg" className="w-9 h-9" />
+						<div className="left-[20px] top-[-12px] w-6 h-6 absolute p-2 rounded-full bg-badge-orange text-ssm flex items-center justify-center">
 							<span className="text-white font-semibold">12</span>
 						</div>
 					</div>
@@ -23,7 +23,7 @@ const HeaderTools = () => {
 			/>
 
 			<HeaderToolItem
-				imgSrc={<img alt="User Circle" src="/icons/User Circle.svg" className="w-[36px] h-[36px]" />}
+				imgSrc={<img alt="User Circle" src="/icons/User Circle.svg" className="w-9 h-9" />}
 				text={t('header.account')}
 			/>
 		</div>

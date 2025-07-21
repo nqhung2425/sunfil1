@@ -5,7 +5,7 @@ const Search = () => {
 
 	return (
 		<div className="flex-1 flex items-center">
-			<div className="p-2 h-[50px] w-full flex justify-between items-center border-2 border-promotion-blue-end rounded-[4rem]">
+			<div className="p-2 h-[4rem] w-full flex justify-between items-center border-2 border-promotion-blue-end rounded-[4rem]">
 				<input
 					placeholder={t('header.searchPlaceholder')}
 					className="flex-1 h-10 px-3 text-sm  border-none outline-none focus:border-none focus:outline-none"

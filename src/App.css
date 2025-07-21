@@ -6,13 +6,21 @@
 	--color-promotion-cyan-mid: #37cfff;
 	--color-promotion-blue-end: #0f5ed6;
 	--color-badge-orange: #ff5630;
+	--text-ssm: 0.75rem;
 }
 
+@media (min-width: 1400px) and (max-width: 1800px) {
+	html {
+		font-size: 75%; /* Từ 1500 đến dưới 1920px */
+	}
+}
+
+@media (min-width: 1800px) {
+	html {
+		font-size: 100%; /* Từ 1920px trở lên */
+	}
+}
 body {
 	font-family: 'Epilogue', sans-serif;
-	/* font-optical-sizing: auto; */
-	font-weight: 300;
-	font-style: normal;
-	/* font-size: 0.75rem; */
-	/* line-height: 0.75rem; */
+	font-size: 1rem;
 }
