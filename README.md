@@ -1,16 +1,21 @@
-# REACTJS TEMPLATE
+# Sunfil1
 
-## This project use:
+## Usage:
 
-### Techs:
+### Nodejs version (Make sure your Node.js version matches the one specified in the .nvmrc file.)
 
--   ReactJS + TypeScript
--   Redux Toolkit and RTK Query
+`npm use nvm`
 
-### Code Formating
+### Run project in dev mode
 
--   Prettier
+`npm install && npm run dev`
 
-### Node version
+## Tasks:
 
--   NVM
+### Home page:
+
+-   [ ] header
+-   [ ] promotion-banner
+-   [ ] product-list-filter
+-   [ ] product-list
+-   [ ] footer

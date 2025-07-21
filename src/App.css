@@ -1,6 +1,18 @@
 @import 'tailwindcss';
+
+@theme {
+	--color-mint-500: oklch(0.72 0.11 178);
+	--color-promotion-blue-start: #0d57c6;
+	--color-promotion-cyan-mid: #37cfff;
+	--color-promotion-blue-end: #0f5ed6;
+	--color-badge-orange: #ff5630;
+}
+
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Epilogue', sans-serif;
+	/* font-optical-sizing: auto; */
 	font-weight: 300;
 	font-style: normal;
+	/* font-size: 0.75rem; */
+	/* line-height: 0.75rem; */
 }

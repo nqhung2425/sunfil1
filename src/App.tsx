@@ -1,19 +1,16 @@
 import './App.css';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: (
-			<div>
-				<h1>Hello World</h1>
-				<Link to="about">About Us</Link>
-			</div>
+			<Layout>
+				<Home />
+			</Layout>
 		),
-	},
-	{
-		path: 'about',
-		element: <div className="text-3xl font-bold underline">About</div>,
 	},
 ]);
 

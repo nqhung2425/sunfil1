@@ -1,0 +1,37 @@
+import { Trans, useTranslation } from 'react-i18next';
+
+const phone = '0283 760 7607';
+const code = 'NEWBIE';
+
+const NewbiePromotion = () => {
+	const { t, i18n } = useTranslation();
+
+	return (
+		<div className="bg-gradient-to-r from-promotion-blue-start via-promotion-cyan-mid to-promotion-blue-end text-white font-[400]">
+			<div className="lg:w-[75vw] m-auto">
+				<div className="flex justify-between p-1">
+					<div className="flex gap-2 items-center">
+						<img src="/icons/Sale.svg" alt="Sale Icon" className="w-4 h-4" />
+						<Trans i18nKey="header.promoBanner" values={{ code }}>
+							Nhập mã <span className="text-yellow-300 font-bold">{code}</span> giảm ngay 10% cho lần đầu
+							mua hàng.
+						</Trans>
+					</div>
+					<div className="flex gap-6">
+						<div className="flex items-center gap-2">
+							<img src="/icons/Smartphone.svg" alt="Sale Icon" className="w-4 h-4" />
+							<div>Hotline: {phone}</div>
+						</div>
+
+						<div className="flex gap-2 items-center">
+							<img src="/icons/Phone Rounded.svg" alt="Sale Icon" className="w-4 h-4" />
+							<p className="align-middle">{t('header.downloadApp')}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default NewbiePromotion;

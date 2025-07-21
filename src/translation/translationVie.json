@@ -1,0 +1,26 @@
+{
+  "header": {
+    "promoBanner": "Nhập mã <1>{{code}}</1> giảm ngay 10% cho lần đầu mua hàng.",
+    "downloadApp": "Tải ứng dụng",
+    "searchPlaceholder": "Tìm sản phẩm",
+    "language": "VI",
+    "cart": "Giỏ hàng",
+    "account": "Tài khoản",
+    "cartItems": "{{count}} sản phẩm", 
+    
+    "menu": {
+      "category": "Danh Mục Sản Phẩm",
+      "aboutUs": "Về Chúng Tôi",
+      "blog": "Bài Viết",
+      "catalog": "Catalog",
+      "contact": "Liên Hệ"
+    },
+
+    "benefits": {
+      "support": "Hỗ trợ 24/7",
+      "freeShipping": "Miễn Phí Vận Chuyển",
+      "fastDelivery": "Giao Hàng Nhanh 2h",
+      "easyReturn": "30 Ngày Đổi Trả"
+    }
+  }
+}
