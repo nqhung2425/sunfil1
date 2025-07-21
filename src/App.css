@@ -7,6 +7,7 @@
 	--color-promotion-blue-end: #0f5ed6;
 	--color-badge-orange: #ff5630;
 	--text-ssm: 0.75rem;
+	--color-secondary: #637381;
 }
 
 @media (min-width: 1400px) and (max-width: 1800px) {
