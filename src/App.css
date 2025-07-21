@@ -12,13 +12,7 @@
 
 @media (min-width: 1400px) and (max-width: 1800px) {
 	html {
-		font-size: 75%; /* Từ 1500 đến dưới 1920px */
-	}
-}
-
-@media (min-width: 1800px) {
-	html {
-		font-size: 100%; /* Từ 1920px trở lên */
+		font-size: 14px;
 	}
 }
 body {
