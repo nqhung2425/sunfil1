@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
 const CategoryGroup = () => {
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 	return (
 		<div className="flex bg-promotion-blue-end items-center px-[16px] py-[12px] gap-4 rounded-md">
 			<button className="flex items-center gap-2 hover:cursor-pointer">

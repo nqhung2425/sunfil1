@@ -4,7 +4,7 @@ const phone = '0283 760 7607';
 const code = 'NEWBIE';
 
 const NewbiePromotion = () => {
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 
 	return (
 		<div className="bg-gradient-to-r from-promotion-blue-start via-promotion-cyan-mid to-promotion-blue-end text-white font-[400]">

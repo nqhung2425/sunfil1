@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HeaderToolItem from './HeaderToolItem';
 
 const CompanyInfoList = () => {
-	const { t, i18n } = useTranslation();
+	const { t } = useTranslation();
 	return (
 		<div className="flex-1 flex gap-2 justify-between">
 			<div className="flex gap-4 font-[400]">
