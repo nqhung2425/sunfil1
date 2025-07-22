@@ -13,8 +13,8 @@ const SubCategory = (props: SubCategoryProps) => {
 			<div className="sub-cate grid grid-cols-3 gap-4">
 				{category?.subcategories?.map((subCate) => {
 					return (
-						<div className="flex gap-4 items-center bg-white rounded-sm shadow p-4">
-							<img src={subCate.imageUrl} className="w-[4rem] h-[4rem] bg-cover" />
+						<div key={subCate.id} className="flex gap-4 items-center bg-white rounded-sm shadow p-4">
+							<img src={subCate.imageUrl} alt={subCate.name} className="w-[4rem] h-[4rem] bg-cover" />
 							<h3 className="font-[500]">{subCate.name}</h3>
 						</div>
 					);

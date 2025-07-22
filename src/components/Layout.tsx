@@ -10,25 +10,33 @@ type LayoutProps = {
 	children: ReactNode;
 };
 
+const LayoutContainer = ({ children }: { children: React.ReactNode }) => (
+	<div className="m-auto w-[90%] 2xl:w-[75%] flex-1 flex flex-col text-ssm">{children}</div>
+);
+
 const Layout: React.FC<LayoutProps> = ({ children }) => {
 	return (
 		<div className="min-h-screen flex flex-col bg-category-bg">
 			<NewbiePromotion />
+
 			<div className="bg-white">
-				<div className="m-auto w-[90%] 2xl:w-[75%] flex-1 flex flex-col text-ssm ">
+				<LayoutContainer>
 					<Header />
-				</div>
+				</LayoutContainer>
 			</div>
-			<div className="m-auto w-[90%] 2xl:w-[75%] flex-1 flex flex-col text-ssm bg-transparent">
+
+			<LayoutContainer>
 				<main className="flex-1">{children}</main>
 				<ServiceHighlights />
-			</div>
+			</LayoutContainer>
+
 			<div className="bg-brand-blue-50">
 				<StoreSystemBox />
 			</div>
-			<div className="m-auto w-[90%] 2xl:w-[75%] flex-1 flex flex-col text-ssm bg-transparent">
+
+			<LayoutContainer>
 				<Footer />
-			</div>
+			</LayoutContainer>
 		</div>
 	);
 };

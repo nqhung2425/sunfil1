@@ -13,10 +13,11 @@ const CategoryGroup = () => {
 			onMouseLeave={() => setIsHovered(false)}
 		>
 			<button className="flex items-center gap-2 hover:cursor-pointer">
-				<img src="/icons/menu.svg" className="w-5 h-5" />
+				<img src="/icons/menu.svg" alt="menu" className="w-5 h-5" />
 				<span className="text-white text-base font-semibold leading-5">{t('header.menu.category')}</span>
 				<img
 					src="/icons/chevron-down.svg"
+					alt="chevron-down"
 					className="ml-4 w-5 h-5 transform transition-transform duration-300 group-hover:rotate-[-180deg]"
 				/>
 			</button>

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ProductListFilter = () => {
-	const [priceAsc, setPriceAsc] = React.useState(true);
 	const [selectedSort, setSelectedSort] = React.useState('Liên quan');
 	const [isAscending, setIsAscending] = React.useState(true);
 
@@ -13,10 +12,6 @@ const ProductListFilter = () => {
 
 	const handleSortClick = (option: string) => {
 		setSelectedSort(option);
-	};
-
-	const togglePriceSort = () => {
-		setPriceAsc(!priceAsc);
 	};
 
 	return (

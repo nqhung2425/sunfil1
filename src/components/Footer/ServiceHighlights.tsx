@@ -1,5 +1,3 @@
-import React from 'react';
-
 const services = [
 	{
 		title: 'Miễn phí vận chuyển',

@@ -11,7 +11,7 @@ const Search = () => {
 					className="flex-1 h-10 px-3 text-sm  border-none outline-none focus:border-none focus:outline-none"
 				/>
 				<div className="flex gap-y-4 gap-x-6 items-center">
-					<img alt="Sale Icon" src="/icons/Camera.svg" className="w-6 h-6" />
+					<img alt="Camera" src="/icons/Camera.svg" className="w-6 h-6" />
 					<div className=" bg-promotion-blue-end rounded-[4rem] px-5 py-2">
 						<img alt="Magnifer" src="/icons/Magnifer.svg" className="w-6 h-6" />
 					</div>

@@ -8,7 +8,7 @@ const Header = () => {
 		<>
 			<div className="mb-4 flex gap-[3rem]">
 				<div>
-					<img alt="Sale Icon" src="/logo_sunfil1.png" />
+					<img alt="brand logo" src="/logo_sunfil1.png" />
 				</div>
 				<Search />
 				<HeaderTools />

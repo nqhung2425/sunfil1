@@ -17,7 +17,7 @@ const FeatureItem = (props: FeatureItemProps) => {
 							background: 'linear-gradient(90deg, #FFD366 0%, #FFB24D 100%)',
 						}}
 					>
-						<img src="/icons/Left.svg" alt="Sale Icon" className="w-4 h-4" />
+						<img src="/icons/Left.svg" alt="Left" className="w-4 h-4" />
 						<span className="text-sm leading-6">Giá cực sốc</span>
 					</button>
 				</div>

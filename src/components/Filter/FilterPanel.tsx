@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { filterData } from '../../mock/filterData';
 import Section from './Section';
 
@@ -40,7 +40,7 @@ const FilterPanel = () => {
 	return (
 		<div className="w-[20vw] p-4 bg-white rounded-lg shadow-sm flex flex-col gap-4 text-[0.875rem]">
 			<div className="flex gap-2 items-center">
-				<img src="/icons/end icon.svg" className="w-8 h-8" />
+				<img src="/icons/end icon.svg" alt="end" className="w-8 h-8" />
 				<h2 className="text-blue-600 font-bold text-2xl flex items-center gap-2">Bộ Lọc</h2>
 			</div>
 

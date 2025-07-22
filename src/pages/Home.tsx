@@ -6,7 +6,7 @@ import { bestSellers } from '../mock/products';
 const Home = () => {
 	return (
 		<div>
-			<img src="/banner.png" className="w-full object-cover" />
+			<img src="/banner.png" alt="banner" className="w-full object-cover" />
 			<div className="p-12 bg-brand-blue rounded-b-xl">
 				<FeatureSlider products={bestSellers} />
 			</div>

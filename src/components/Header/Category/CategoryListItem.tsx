@@ -9,10 +9,10 @@ const CategoryListItem = (props: CategoryListItemProps) => {
 	return (
 		<div className="p-4 flex justify-between items-center relative z-10">
 			<div className="flex gap-4 items-center">
-				<img src={category.imageUrl} className="w-[2.5rem] h-[2.5rem] bg-cover" />
+				<img src={category.imageUrl} alt={category.name} className="w-[2.5rem] h-[2.5rem] bg-cover" />
 				<h3 className="font-[500]">{category.name}</h3>
 			</div>
-			<img src="/icons/Alt Arrow Right.svg" className="w-4 h-4" />
+			<img src="/icons/Alt Arrow Right.svg" alt="Alt Arrow Right" className="w-4 h-4" />
 		</div>
 	);
 };
