@@ -1,42 +1,11 @@
-export const bestSellers = [
-  {
-    id: 'product-1',
+export const bestSellers = Array.from({ length: 30 }, (_, i) => {
+  const index = i + 1;
+  return {
+    id: `product-${index}`,
     name: 'Lọc gió động cơ Air Filter – Chevrolet Co...',
     price: 299000,
     originalPrice: 329000,
     discountPercent: 10,
-    imageUrl: '/images/product1.png',
-  },
-  {
-    id: 'product-2',
-    name: 'Lọc gió động cơ Air Filter – Chevrolet Co...',
-    price: 299000,
-    originalPrice: 329000,
-    discountPercent: 10,
-    imageUrl: '/images/product2.png',
-  },
-  {
-    id: 'product-3',
-    name: 'Lọc gió động cơ Air Filter – Chevrolet Co...',
-    price: 299000,
-    originalPrice: 329000,
-    discountPercent: 10,
-    imageUrl: '/images/product3.png',
-  },
-  {
-    id: 'product-4',
-    name: 'Lọc gió động cơ Air Filter – Chevrolet Co...',
-    price: 299000,
-    originalPrice: 329000,
-    discountPercent: 10,
-    imageUrl: '/images/product4.png',
-  },
-  {
-    id: 'product-5',
-    name: 'Lọc gió động cơ Air Filter – Chevrolet Co...',
-    price: 299000,
-    originalPrice: 329000,
-    discountPercent: 10,
-    imageUrl: '/images/product5.png',
-  },
-];
+    imageUrl: `/categories/img (${(index % 5) + 1}).png`,
+  };
+});

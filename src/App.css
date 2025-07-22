@@ -8,6 +8,9 @@
 	--color-badge-orange: #ff5630;
 	--text-ssm: 0.75rem;
 	--color-secondary: #637381;
+	--color-category-bg: #f4f6f8;
+	--color-gray-line: #919eab3d;
+	--color-brand-blue: #025fca;
 }
 
 @media (min-width: 1400px) and (max-width: 1800px) {
