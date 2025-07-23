@@ -7,7 +7,7 @@ const Footer = () => {
 		<div className="my-[6rem]">
 			<div className="flex justify-between">
 				<div className="address">
-					<h3 className="font-semibold mb-8 uppercase">
+					<h3 className="font-semibold mb-8 uppercase text-brand-800">
 						Viet Hung Auto Production Trading Joint Stock Company
 					</h3>
 					<div className="flex flex-col text-secondary gap-1">
@@ -29,7 +29,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="sitemap">
-					<h3 className="text-2xl font-semibold mb-8">{t('footer.sitemap')}</h3>
+					<h3 className="text-2xl font-semibold mb-8 text-brand-800">{t('footer.sitemap')}</h3>
 					<div className="flex flex-col gap-3 text-secondary">
 						<Link to={'/'}>{t('footer.about')}</Link>
 						<Link to={'/'}>{t('footer.article')}</Link>
@@ -38,7 +38,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="legal">
-					<h3 className="text-2xl font-semibold mb-8">{t('footer.legal')}</h3>
+					<h3 className="text-2xl font-semibold mb-8 text-brand-800">{t('footer.legal')}</h3>
 					<div className="flex flex-col gap-3 text-secondary">
 						<Link className="font-bold text-black" to={'/'}>
 							_ {t('footer.privacyPolicy')}
@@ -49,7 +49,7 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="download">
-					<h3 className="text-2xl font-semibold mb-8">Download App</h3>
+					<h3 className="text-2xl font-semibold mb-8 text-brand-800">Download App</h3>
 					<div className="flex flex-col gap-2">
 						<img src="button-app store.png" alt="app store" />
 						<img src="button-play store.png" alt="play store" />

@@ -34,9 +34,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 				<StoreSystemBox />
 			</div>
 
-			<LayoutContainer>
-				<Footer />
-			</LayoutContainer>
+			<div className="relative w-full overflow-hidden">
+				<div className="absolute inset-0 bg-[url('/footer.jpg')] bg-cover bg-center opacity-50"></div>
+				<div className="relative z-10">
+					<LayoutContainer>
+						<Footer />
+					</LayoutContainer>
+				</div>
+			</div>
 		</div>
 	);
 };

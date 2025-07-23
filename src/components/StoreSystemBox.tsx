@@ -10,7 +10,7 @@ export default function StoreSystemBox() {
 				</div>
 
 				<button className="relative px-6 py-3 bg-white rounded-full shadow-sm flex items-center gap-1">
-					<span className="text-2xl">Xem ngay</span>
+					<span className="text-2xl text-blue-800">Xem ngay</span>
 					<img src="/icons/arrow_end icon.svg" alt="arrow_end icon" className="w-12 h-12" />
 				</button>
 			</div>

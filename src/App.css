@@ -15,6 +15,7 @@
 	--color-gray-line: #919eab3d;
 	--color-brand-blue: #025fca;
 	--color-brand-blue-50: #e6f1ff;
+	--color-brand-800: #013065;
 }
 
 @media (min-width: 1400px) and (max-width: 1800px) {
