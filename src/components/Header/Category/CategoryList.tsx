@@ -1,5 +1,4 @@
 import React from 'react';
-import { categories } from '../../../mock/category';
 import CategoryListItem from './CategoryListItem';
 import SubCategory from './SubCategory';
 import { MainCategory } from '../../../types/Category';
@@ -11,7 +10,7 @@ type CategoryListProps = {
 const CategoryList = (props: CategoryListProps) => {
 	const { isHovered } = props;
 	const [selectItem, setSelect] = React.useState<MainCategory | null>(null);
-	const [categories, setCategories] = React.useState<MainCategory[] | []>([]);
+	const [categories, setCategories] = React.useState<MainCategory[]>([]);
 
 	React.useEffect(() => {
 		const getData = async () => {

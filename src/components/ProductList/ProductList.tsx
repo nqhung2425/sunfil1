@@ -16,8 +16,9 @@ const ProductList = () => {
 		setLoading(true);
 		const pageSize = 8;
 		const newProducts = await getProducts(page, pageSize);
+		console.log(newProducts);
 
-		if (newProducts.length === 0 || newProducts.length <= pageSize) {
+		if (newProducts.length === 0 || newProducts.length < pageSize) {
 			setHasMore(false); // ✅ stop further loading
 		} else {
 			setProducts((prev) => [...prev, ...newProducts]);

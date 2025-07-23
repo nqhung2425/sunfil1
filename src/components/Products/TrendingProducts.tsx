@@ -3,7 +3,7 @@ import { Product } from '../../types/Product';
 import ProductCard from '../ProductCard';
 
 type TrendingProductsProps = {
-	products: Product[] | [];
+	products: Product[];
 };
 
 const TrendingProducts = (props: TrendingProductsProps) => {
