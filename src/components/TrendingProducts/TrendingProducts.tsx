@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Product } from '../../types/Product';
-import ProductCard from '../ProductCard';
+import ProductCard from './ProductCard';
 
 type TrendingProductsProps = {
 	products: Product[];

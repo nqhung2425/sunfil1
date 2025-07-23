@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import CategoryList from './Category/CategoryList';
+import CategoryList from './CategoryDetail/CategoryList';
 
 const CategoryGroup = () => {
 	const { t } = useTranslation();

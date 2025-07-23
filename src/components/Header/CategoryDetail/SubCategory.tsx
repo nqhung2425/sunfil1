@@ -1,5 +1,5 @@
 import { MainCategory } from '../../../types/Category';
-import TrendingProducts from '../../Products/TrendingProducts';
+import TrendingProducts from '../../TrendingProducts/TrendingProducts';
 import React from 'react';
 import { Product } from '../../../types/Product';
 import { getTrendingProducts } from '../../../mock/API';

@@ -2,9 +2,9 @@
 import React, { ReactNode } from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import NewbiePromotion from './NewbiePromotion';
+import NewbiePromotion from './Header/NewbiePromotion';
 import ServiceHighlights from './Footer/ServiceHighlights';
-import StoreSystemBox from './StoreSystemBox';
+import StoreSystemBox from './Footer/StoreSystemBox';
 
 type LayoutProps = {
 	children: ReactNode;

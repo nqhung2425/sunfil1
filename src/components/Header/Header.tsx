@@ -1,6 +1,6 @@
-import CategoryGroup from './CategoryGroup';
+import CategoryGroup from './CategoryBtn';
 import CompanyInfoList from './CompanyInfoList';
-import HeaderTools from './HeaderTools';
+import HeaderTools from './Tools/HeaderTools';
 import Search from './Search';
 
 const Header = () => {

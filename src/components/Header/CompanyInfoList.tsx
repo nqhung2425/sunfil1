@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import HeaderToolItem from './HeaderToolItem';
+import HeaderToolItem from './Tools/HeaderToolItem';
 
 const CompanyInfoList = () => {
 	const { t } = useTranslation();

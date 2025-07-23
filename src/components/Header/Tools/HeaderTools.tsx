@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import HeaderToolItem from './HeaderToolItem';
-import FeatureItem from '../Slider/FeatureItem';
-import { bestSellers } from '../../mock/products';
+import FeatureItem from '../../Slider/FeatureItem';
+import { bestSellers } from '../../../mock/products';
 
 const HeaderTools = () => {
 	const { t } = useTranslation();

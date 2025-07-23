@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { sortOptions } from '../constant/constantUI';
+import { sortOptions } from '../../constant/constantUI';
 
 const ProductListFilter = () => {
 	const { t } = useTranslation();
