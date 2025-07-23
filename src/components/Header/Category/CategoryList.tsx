@@ -3,13 +3,24 @@ import { categories } from '../../../mock/category';
 import CategoryListItem from './CategoryListItem';
 import SubCategory from './SubCategory';
 import { MainCategory } from '../../../types/Category';
+import { getCategories } from '../../../mock/API';
 type CategoryListProps = {
 	isHovered: boolean;
 };
 
 const CategoryList = (props: CategoryListProps) => {
 	const { isHovered } = props;
-	const [selectItem, setSelect] = React.useState<MainCategory | null>(categories[0]);
+	const [selectItem, setSelect] = React.useState<MainCategory | null>(null);
+	const [categories, setCategories] = React.useState<MainCategory[] | []>([]);
+
+	React.useEffect(() => {
+		const getData = async () => {
+			const cates = await getCategories();
+			setCategories(cates);
+		};
+		getData();
+	}, []);
+
 	return (
 		<div
 			className={`

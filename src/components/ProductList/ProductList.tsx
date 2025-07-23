@@ -1,6 +1,6 @@
 import React from 'react';
 import { Product } from '../../types/Product';
-import { getMockDataProduct } from '../../mock/API';
+import { getProducts } from '../../mock/API';
 import ProductListFilter from './ProductListFilter';
 import FeatureItem from '../Slider/FeatureItem';
 
@@ -14,9 +14,10 @@ const ProductList = () => {
 		if (loading || !hasMore) return;
 
 		setLoading(true);
-		const newProducts = await getMockDataProduct(page);
+		const pageSize = 8;
+		const newProducts = await getProducts(page, pageSize);
 
-		if (newProducts.length === 0) {
+		if (newProducts.length === 0 || newProducts.length <= pageSize) {
 			setHasMore(false); // ✅ stop further loading
 		} else {
 			setProducts((prev) => [...prev, ...newProducts]);

@@ -1,26 +1,55 @@
 {
-  "header": {
-    "promoBanner": "Nhập mã <1>{{code}}</1> giảm ngay 10% cho lần đầu mua hàng.",
-    "downloadApp": "Tải ứng dụng",
-    "searchPlaceholder": "Tìm sản phẩm",
-    "language": "VI",
-    "cart": "Giỏ hàng",
-    "account": "Tài khoản",
-    "cartItems": "{{count}} sản phẩm", 
-    
-    "menu": {
-      "category": "Danh Mục Sản Phẩm",
-      "aboutUs": "Về Chúng Tôi",
-      "blog": "Bài Viết",
-      "catalog": "Catalog",
-      "contact": "Liên Hệ"
-    },
+	"header": {
+		"promoBanner": "Nhập mã <1>{{code}}</1> giảm ngay 10% cho lần đầu mua hàng.",
+		"downloadApp": "Tải ứng dụng",
+		"searchPlaceholder": "Tìm sản phẩm",
+		"language": "VI",
+		"cart": "Giỏ hàng",
+		"account": "Tài khoản",
+		"cartItems": "{{count}} sản phẩm",
 
-    "benefits": {
-      "support": "Hỗ trợ 24/7",
-      "freeShipping": "Miễn Phí Vận Chuyển",
-      "fastDelivery": "Giao Hàng Nhanh 2h",
-      "easyReturn": "30 Ngày Đổi Trả"
-    }
-  }
+		"menu": {
+			"category": "Danh Mục Sản Phẩm",
+			"aboutUs": "Về Chúng Tôi",
+			"blog": "Bài Viết",
+			"catalog": "Catalog",
+			"contact": "Liên Hệ"
+		},
+
+		"benefits": {
+			"support": "Hỗ trợ 24/7",
+			"freeShipping": "Miễn Phí Vận Chuyển",
+			"fastDelivery": "Giao Hàng Nhanh 2h",
+			"easyReturn": "30 Ngày Đổi Trả"
+		}
+	},
+
+	"footer": {
+		"about": "About",
+		"article": "Article",
+		"cart": "Cart",
+		"contact": "Contact",
+		"sitemap": "Sitemap",
+		"legal": "Legal",
+		"privacyPolicy": "Privacy Policy",
+		"cookiePolicy": "Cookie Policy",
+		"deliveryPolicy": "Delivery Policy",
+		"faqsPolicy": "FQAs Policy"
+	},
+
+	"filter": {
+		"category": "Danh mục sản phẩm",
+		"rangePrice": "Khoảng giá",
+		"brand": "Thương hiệu",
+		"manuYear": "Năm sản xuất",
+		"origin": "Xuất xứ"
+	},
+	"products": {
+		"productList": "Danh sách sản phẩm",
+		"sortBy": "Sắp xếp theo"
+	},
+	"trending": {
+		"trendingProducts": "Sản Phẩm Bán Chạy",
+		"showAll": "Xem tất cả"
+	}
 }

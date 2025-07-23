@@ -11,12 +11,7 @@ const FeatureItem = (props: FeatureItemProps) => {
 			<img src={product.imageUrl} alt={product.name} className="h-[15rem] w-full object-cover p-2" />
 			<div className="p-6 pt-4 flex flex-col gap-3">
 				<div>
-					<button
-						className="flex items-center gap-[0.05rem] px-2 rounded-full text-[#6B0000] font-bold text-sm"
-						style={{
-							background: 'linear-gradient(90deg, #FFD366 0%, #FFB24D 100%)',
-						}}
-					>
+					<button className="flex items-center gap-[0.05rem] px-2 rounded-full text-[#6B0000] font-bold text-sm bg-[linear-gradient(90deg,_#FFD366_0%,_#FFB24D_100%)]">
 						<img src="/icons/Left.svg" alt="Left" className="w-4 h-4" />
 						<span className="text-sm leading-6">Giá cực sốc</span>
 					</button>

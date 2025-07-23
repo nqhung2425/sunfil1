@@ -1,6 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { sortOptions } from '../constant/constantUI';
 
 const ProductListFilter = () => {
+	const { t } = useTranslation();
 	const [selectedSort, setSelectedSort] = React.useState('Liên quan');
 	const [isAscending, setIsAscending] = React.useState(true);
 
@@ -8,17 +11,15 @@ const ProductListFilter = () => {
 		setIsAscending((prev) => !prev);
 	};
 
-	const sortOptions = ['Liên quan', 'Bán chạy', 'Mới nhất', 'Nổi bật'];
-
 	const handleSortClick = (option: string) => {
 		setSelectedSort(option);
 	};
 
 	return (
 		<div className="flex flex-wrap items-center justify-between gap-2 text-sm">
-			<h2 className="font-semibold text-xl mr-2">Danh sách sản phẩm</h2>
+			<h2 className="font-semibold text-xl mr-2">{t('products.productList')}</h2>
 			<div className="flex gap-2 items-center text-base">
-				<span className="text-gray-600">Sắp xếp theo</span>
+				<span className="text-gray-600">{t('products.sortBy')}</span>
 				{/* Sort Buttons */}
 				{sortOptions.map((option) => (
 					<button

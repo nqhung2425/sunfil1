@@ -1,6 +1,8 @@
 import { MainCategory } from '../../../types/Category';
-import { bestSellers } from '../../../mock/products';
 import TrendingProducts from '../../Products/TrendingProducts';
+import React from 'react';
+import { Product } from '../../../types/Product';
+import { getTrendingProducts } from '../../../mock/API';
 
 type SubCategoryProps = {
 	category: MainCategory | null;
@@ -8,6 +10,14 @@ type SubCategoryProps = {
 
 const SubCategory = (props: SubCategoryProps) => {
 	const { category } = props;
+	const [products, setProducts] = React.useState<Product[]>([]);
+	React.useEffect(() => {
+		const getData = async () => {
+			const trendingProducts = await getTrendingProducts();
+			setProducts(trendingProducts);
+		};
+		getData();
+	}, []);
 	return (
 		<div className="p-4">
 			<div className="sub-cate grid grid-cols-3 gap-4">
@@ -25,7 +35,7 @@ const SubCategory = (props: SubCategoryProps) => {
 			)}
 
 			<div className="trending-products">
-				<TrendingProducts products={bestSellers} />
+				<TrendingProducts products={products} />
 			</div>
 		</div>
 	);

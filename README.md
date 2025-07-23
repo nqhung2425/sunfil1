@@ -14,8 +14,8 @@
 
 ### Home page:
 
--   [ ] header
--   [ ] promotion-banner
--   [ ] product-list-filter
--   [ ] product-list
--   [ ] footer
+-   [x] header
+-   [x] promotion-banner
+-   [x] product-list-filter
+-   [x] product-list
+-   [x] footer

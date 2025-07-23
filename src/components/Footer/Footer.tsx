@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+	const { t } = useTranslation();
 	return (
 		<div className="my-[6rem]">
 			<div className="flex justify-between">
@@ -27,23 +29,23 @@ const Footer = () => {
 					</div>
 				</div>
 				<div className="sitemap">
-					<h3 className="text-2xl font-semibold mb-8">Sitemap</h3>
+					<h3 className="text-2xl font-semibold mb-8">{t('footer.sitemap')}</h3>
 					<div className="flex flex-col gap-3 text-secondary">
-						<Link to={'/'}>About</Link>
-						<Link to={'/'}>Article</Link>
-						<Link to={'/'}>Cart</Link>
-						<Link to={'/'}>Contact</Link>
+						<Link to={'/'}>{t('footer.about')}</Link>
+						<Link to={'/'}>{t('footer.article')}</Link>
+						<Link to={'/'}>{t('footer.cart')}</Link>
+						<Link to={'/'}>{t('footer.contact')}</Link>
 					</div>
 				</div>
 				<div className="legal">
-					<h3 className="text-2xl font-semibold mb-8">Legal</h3>
+					<h3 className="text-2xl font-semibold mb-8">{t('footer.legal')}</h3>
 					<div className="flex flex-col gap-3 text-secondary">
 						<Link className="font-bold text-black" to={'/'}>
-							_ Privacy Policy
+							_ {t('footer.privacyPolicy')}
 						</Link>
-						<Link to={'/'}>Cookie Policy</Link>
-						<Link to={'/'}>Delivery Policy</Link>
-						<Link to={'/'}>FQAs Policy</Link>
+						<Link to={'/'}>{t('footer.cookiePolicy')}</Link>
+						<Link to={'/'}>{t('footer.deliveryPolicy')}</Link>
+						<Link to={'/'}>{t('footer.faqsPolicy')}</Link>
 					</div>
 				</div>
 				<div className="download">

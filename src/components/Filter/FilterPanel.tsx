@@ -1,8 +1,10 @@
 import React from 'react';
 import { filterData } from '../../mock/filterData';
 import Section from './Section';
+import { useTranslation } from 'react-i18next';
 
 const FilterPanel = () => {
+	const { t } = useTranslation();
 	const [selectedFilters, setSelectedFilters] = React.useState({
 		category: [] as string[],
 		price: [] as string[],
@@ -45,7 +47,11 @@ const FilterPanel = () => {
 			</div>
 
 			{/* Section: Danh mục sản phẩm */}
-			<Section title="Danh mục sản phẩm" open={openSections.category} onToggle={() => toggleSection('category')}>
+			<Section
+				title={t('filter.category')}
+				open={openSections.category}
+				onToggle={() => toggleSection('category')}
+			>
 				{filterData.categories.map((label, idx) => (
 					<label key={idx} className="flex items-center gap-4 mt-1">
 						<input
@@ -62,7 +68,7 @@ const FilterPanel = () => {
 			</Section>
 
 			{/* Section: Khoảng giá */}
-			<Section title="Khoảng giá" open={openSections.price} onToggle={() => toggleSection('price')}>
+			<Section title={t('filter.rangePrice')} open={openSections.price} onToggle={() => toggleSection('price')}>
 				{filterData.prices.map((price, idx) => {
 					const isChecked = selectedFilters.price.includes(price);
 					return (
@@ -83,7 +89,7 @@ const FilterPanel = () => {
 				})}
 			</Section>
 			{/* Section: Thương hiệu */}
-			<Section title="Thương hiệu" open={openSections.brand} onToggle={() => toggleSection('brand')}>
+			<Section title={t('filter.brand')} open={openSections.brand} onToggle={() => toggleSection('brand')}>
 				{filterData.brands.map((brand, idx) => (
 					<label key={idx} className="flex items-center gap-4 mt-1">
 						<input
@@ -100,7 +106,7 @@ const FilterPanel = () => {
 			</Section>
 
 			{/* Section: Năm sản xuất */}
-			<Section title="Năm sản xuất" open={openSections.year} onToggle={() => toggleSection('year')}>
+			<Section title={t('filter.manuYear')} open={openSections.year} onToggle={() => toggleSection('year')}>
 				{filterData.years.map((year, idx) => (
 					<label key={idx} className="flex items-center gap-4 mt-1">
 						<input
@@ -117,7 +123,7 @@ const FilterPanel = () => {
 			</Section>
 
 			{/* Section: Xuất xứ */}
-			<Section title="Xuất xứ" open={openSections.origin} onToggle={() => toggleSection('origin')}>
+			<Section title={t('filter.origin')} open={openSections.origin} onToggle={() => toggleSection('origin')}>
 				{filterData.origins.map((origin, idx) => (
 					<label key={idx} className="flex items-center gap-4 mt-1">
 						<input type="checkbox" className="accent-blue-600" />
